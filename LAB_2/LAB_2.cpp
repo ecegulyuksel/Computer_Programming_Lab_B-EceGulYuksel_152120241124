@@ -21,11 +21,12 @@ void searchSong(Node* head, string& title) {
     Node* current = head;
     while (current != nullptr) {
         if (current->songTitle == title) {
-            cout << "Song founded: " << title << endl;
+            cout << "Song found: " << title << endl; 
+            return; 
         }
         current = current->next;
     }
-    cout << "Song not found: " << title << endl;
+    cout << "Song not found: " << title << endl; 
 }
 
 void displaySongs(Node* head) {
